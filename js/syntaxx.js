@@ -64,7 +64,7 @@ else {
 console.log(grade);
 
 
-//Switch Statement
+//Switch Statement- not in use 
 
 
 switch (Math.floor(Math.random()*4)){
@@ -102,3 +102,29 @@ switch (player){
         console.log("No Tie!");
         break;
 }
+
+
+//Ternary Operator
+//Conditional operator the onky operator that takes three operands
+// what is operand?
+// An operand is a value on which an operator performs an operation.
+//sytax of ternary operator
+// condition ? expressionIfTrue : expressionIfFalse
+
+let subcriber="No";
+let response = subcriber === "Subcribed"? "Thanks for Subcribing!" : "Please do Subcribe";
+console.log(response);
+
+//grade printing using ternary operator
+let testScore2 =30;
+let grade2= testScore2 >= 90? "A": testScore2>=80? "B": testScore2>=60?"C": testScore2>=50?"D":"F";
+console.log(grade2); //chaining of ternary operators
+
+
+//Rock Paper Scissors Game using Ternary Operator
+let myTurn="rock";
+let computerTurn="paper";
+let result= myTurn===computerTurn? "Tie!": myTurn==="rock" && computerTurn==="paper"? "computer wins!": myRurn==="rock" && computerTurn==="scissors"?"I win!": myTurn==="paper"&&computerTurn==="rock"?"I win!": myTurn==="paper"&&computerTurn==="scissors"?"computer wins!": myTurn==="scissors"&&computerTurn==="rock"?"computer wins!": myTurn==="scissors"&&computerTurn==="paper"?"I win!":"Invalid input";
+console.log(result);
+// can use only computer wins and last print is default is i win
+
